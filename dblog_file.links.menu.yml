@@ -1,0 +1,12 @@
+dblog_file.settings:
+  title: 'Recent log messages file save settings'
+  route_name: dblog_file.settings
+  description: 'Administer dblog file settings.'
+  parent: system.admin_config_system
+  weight: 1
+dblog_file.download:
+  title: 'Download recent log messages'
+  route_name: dblog_file.download
+  description: 'Download recent log messages.'
+  parent: dblog.overview
+  weight: 1

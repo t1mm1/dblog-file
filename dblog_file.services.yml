@@ -1,0 +1,11 @@
+services:
+  dblog_file.logger_channel_factory:
+    class: Drupal\dblog_file\Logger\LoggerChannelFactory
+    decorates: logger.factory
+    decoration_priority: 10
+    arguments:
+      - '@dblog_file.logger_channel_factory.inner'
+      - '@config.factory'
+      - '@file_system'
+      - '@current_user'
+      - '@request_stack'

@@ -1,0 +1,12 @@
+dblog_file.settings:
+  type: config_object
+  mapping:
+    enabled:
+      type: integer
+      label: 'Enabled service'
+    count:
+      type: integer
+      label: 'Lines logs in the file'
+    types:
+      type: sequence
+      label: 'Log types'

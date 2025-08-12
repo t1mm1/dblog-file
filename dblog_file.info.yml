@@ -1,0 +1,8 @@
+name: Recent log messages file
+type: module
+description: 'Recent log messages file saving.'
+core_version_requirement: ^10 || ^11
+configure: dblog_file.settings
+package: Custom
+dependencies:
+ - drupal:dblog

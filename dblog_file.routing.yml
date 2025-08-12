@@ -1,0 +1,19 @@
+dblog_file.settings:
+  path: '/admin/config/system/save-logs-to-file'
+  defaults:
+    _form: '\Drupal\dblog_file\Form\SettingsForm'
+    _title: 'Recent log messages file settings'
+  requirements:
+    _permission: 'access site reports'
+  options:
+    _admin_route: TRUE
+dblog_file.download:
+  path: '/admin/reports/dblog/download'
+  defaults:
+    _controller: '\Drupal\dblog_file\Controller\DownloadController::download'
+    _title: 'Download log file'
+  requirements:
+    _permission: 'access site reports'
+  options:
+    _admin_route: TRUE
+    no_cache: TRUE
